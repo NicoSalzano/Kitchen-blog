@@ -7,6 +7,8 @@
     <title>{{$title ?? 'Kitchen Blog'}}</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireStyles
+    {{$style ?? ''}}
 </head>
 <body>
     <x-navbar/>
@@ -15,5 +17,9 @@
 </div>
 
     <x-footer/>
+
+
+    @livewireScripts
+    {{$script ?? ''}}
 </body>
 </html>

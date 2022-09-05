@@ -6,9 +6,12 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample04">
-        <ul class="navbar-nav fs-3 ms-auto mb-2 mb-md-0">
+        <ul class="navbar-nav fs-3 me-auto mb-2 mb-md-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{route('recipe.create')}}">Aggiungi Ricetta</a>
           </li>
           @guest
           <li class="nav-item">
