@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 
 // Recipe
-Route::get('/nuovo/annuncio',[RecipeController::class, 'createRecipe'])->name('recipe.create');
+Route::get('createRecipe',[RecipeController::class, 'createRecipe'])->name('createRecipe');

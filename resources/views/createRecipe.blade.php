@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <livewire:create-recepi />
+                <livewire:create-recipe/>
             </div>
         </div>
     </div>

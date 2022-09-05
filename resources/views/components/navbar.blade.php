@@ -11,7 +11,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{route('recipe.create')}}">Aggiungi Ricetta</a>
+            <a class="nav-link active" aria-current="page" href="{{route('createRecipe')}}">Aggiungi Ricetta</a>
           </li>
           @guest
           <li class="nav-item">

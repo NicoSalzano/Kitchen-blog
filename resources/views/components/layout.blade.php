@@ -8,7 +8,7 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
-    {{$style ?? ''}}
+    
 </head>
 <body>
     <x-navbar/>
@@ -20,6 +20,6 @@
 
 
     @livewireScripts
-    {{$script ?? ''}}
+    
 </body>
 </html>
