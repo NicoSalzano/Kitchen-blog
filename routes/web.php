@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 
 // Recipe
-Route::get('createRecipe',[RecipeController::class, 'createRecipe'])->name('createRecipe');
+Route::get('nuova/ricetta',[RecipeController::class, 'createRecipe'])->middleware('auth')->name('createRecipe');

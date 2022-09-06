@@ -8,11 +8,9 @@
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav fs-3 me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{route('createRecipe')}}">Aggiungi Ricetta</a>
-          </li>
+          
           @guest
           <li class="nav-item">
             <a class="nav-link" href="{{route('register')}}">Registrati</a>
@@ -21,6 +19,9 @@
             <a class="nav-link" href="{{route('login')}}">Accedi</a>
           </li>
           @else
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{route('createRecipe')}}">Aggiungi Ricetta</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
               {{Auth::user()->name}}

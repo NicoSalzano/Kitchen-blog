@@ -2,7 +2,9 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Category;
 use App\Models\Recipe;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class CreateRecipe extends Component
@@ -10,6 +12,7 @@ class CreateRecipe extends Component
     public $title;
     public $body;
     public $description;
+    public $category;
     
 
     protected $rules = [
@@ -17,7 +20,7 @@ class CreateRecipe extends Component
         'title' => 'required|min:4',
         'body' => 'required|min:4',
         'description' => 'required|min:4',
-
+        'category' => 'required',
     ];
 
 
@@ -35,12 +38,16 @@ class CreateRecipe extends Component
 
     public function store()
     {
-        Recipe::create([
-
+        $category = Category::find($this->category);
+        
+        $recipe = $category->recipes()->create([
             'title'=>$this->title,
             'body'=>$this->body,
             'description'=>$this->description,
-        ]); 
+
+        ]);
+        Auth::user()->recipes()->save($recipe);
+        
         session()->flash('message', 'Ricetta inserita con successo');
         $this->cleanForm();
     }
@@ -51,6 +58,9 @@ class CreateRecipe extends Component
         $this->title='';
         $this->body='';
         $this->description='';
+        $this->category='';
+
+
     }
 
     public function render()
