@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Recipe extends Model
 {
     use HasFactory;
-    protected $fillable = ['title','body','description']
+    protected $fillable = ['title','body','description'];
 }
