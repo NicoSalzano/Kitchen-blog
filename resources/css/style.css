@@ -1,3 +1,42 @@
-body{
-    background-color: lightpink;
+:root{
+
 }
+body{
+    background-color: lightgrey;
+}
+
+.p-font{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.logo{
+    
+    height: 130px;
+    width: 170px;
+    margin-left: 100px;
+}
+
+/* modificare grandezza immagine di sfondo */
+.cover{
+    background-image: url("/storage/media/lily-banse--YHSwy6uqvk-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    /* width: 100%; */
+  
+
+}
+
+/* modificare grandezza box (forse diminuire) */
+.sezione-filtri{
+    transform: translateY(-40%);
+    background-color: white;
+    width: 80%;
+    height: 30vh;
+    align-items: center;
+    /* display:flex ; */
+}
+
+

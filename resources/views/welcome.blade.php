@@ -1,7 +1,29 @@
 <x-layout>
+
+<div class="container-fluid p-0 m-0">
+  <div class="row p-0 m-0 align-items-center">
+    <div class="col-12 cover p-0 m-0 justify-content-center  text-center">
+      
+    </div>
+  </div>
+</div>
+
+<section class="container  sezione-filtri">
+  <div class="row py-4">
+      <div class="col-12 col-md-3">
+          <div class="form-floating mb-3">
+              {{-- Aggiungere div per titolo e div per form di ricerca --}}
+          </div>
+      </div>
+    </div>
+</section>
+
+
+  <h3>Le ricette dei nostri iscritti</h3>
+  {{-- card per mostrare le ultime ricette aggiunte nella home --}}
+  <div class="container">
+
     <div class="col-12 col-md-4">
-        <h1>Blog Cucina</h1>
-        <p>Le ricette dei nostri iscritti</p>
         <div class="row">
             @foreach ($recipes as $recipe)
             <div class="card text-center " style="background-color:#ffffff;">
@@ -21,15 +43,10 @@
                     Categoria:{{$recipe->category->name}}
                   </a>
                   <p class="card-footer">Pubblicata il:{{$recipe->created_at->format('d/m/Y')}}</p>
-
-
-
                 </div>
               </div>
-        
+              @endforeach
               </div>
-                
-            @endforeach
-        </div>
-    </div>
+            </div>
+  </div>
 </x-layout>
