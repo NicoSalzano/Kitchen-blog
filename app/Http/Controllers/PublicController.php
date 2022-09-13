@@ -10,7 +10,7 @@ class PublicController extends Controller
 {
    public function welcome() 
    {
-        $recipes = Recipe::take(6)->get()->sortByDesc('created_at');
+        $recipes = Recipe::take(4)->get()->sortByDesc('created_at');
         
         return view('welcome', compact('recipes'));
    }

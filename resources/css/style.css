@@ -1,35 +1,47 @@
 :root{
-
+    --white: #fff;
+    --black: #000;
+    --dark: #4c4c4c;
+    --grigio: #f2f2f2;
+    --light: rgb(248, 248, 248);    
 }
 body{
-    background-color: lightgrey;
+    background-color: var(--light);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.bcg-dark{
+    background-color: var(--dark);
 }
 
 .p-font{
     font-family: 'Poppins', sans-serif;
 }
 
-
+/* NAVBAR */
 .logo{
     
-    height: 130px;
-    width: 170px;
-    margin-left: 100px;
+    height: 100px;
+    width: 220px;
 }
 
-/* modificare grandezza immagine di sfondo */
+.nav-item {
+    font-size: 18px;
+    padding: 20px;
+    
+}
+
+
+/* WELCOME PAGE */
 .cover{
-    background-image: url("/storage/media/lily-banse--YHSwy6uqvk-unsplash.jpg");
+    background-image: url("/storage/media/cover.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 750px;
-    /* width: 100%; */
-  
-
 }
 
-/* modificare grandezza box (forse diminuire) */
 .sezione-filtri{
     transform: translateY(-40%);
     background-color: white;
@@ -39,4 +51,50 @@ body{
     /* display:flex ; */
 }
 
+.title-last-recipe{
+    font-weight: 400;
+}
 
+.card-recipe{
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.card-title{
+    font-weight: 300;
+}
+
+/* REGISTER */
+/* MODIFICARE BACKGROUND CON IMMAGINE FOOD */
+.back-register{
+    background-color:rgb(82, 121, 111) ;
+}
+.btn-reg{
+    background-color:rgb(82, 121, 111) ;
+    color: white;
+}
+.btn-reg:hover{
+    transition: all 0.5s;
+    background-color:white ;
+    color: black;
+}
+
+
+/* LOGIN */
+/* MODIFICARE BACKGROUND CON IMMAGINE FOOD */
+.back-login{
+    background-color: rgb(255, 180, 162);
+    
+}
+
+.btn-log{
+    background-color: rgb(255, 180, 162);
+    color: white;
+}
+
+.btn-log:hover{
+    transition: all 0.5s;
+    background-color:white ;
+    color: black;
+}
