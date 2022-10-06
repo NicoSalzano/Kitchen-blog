@@ -27,7 +27,7 @@
           @foreach ($recipes as $recipe)
           <div class="col-12 col-lg-3">
             <div class="card-recipe ">
-                <a href="#">
+                <a href="{{route('detailsRecipe', $recipe)}}">
                   <img src="https://picsum.photos/400/600" class="img-fluid" />
                 </a>
                 <h5 class="card-title p-font mt-4 ">{{$recipe->title}}</h5>

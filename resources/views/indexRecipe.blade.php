@@ -24,6 +24,8 @@
                         </div>
                     </div>
                     @endforeach
+                    {{-- link per paginazione da rivedere --}}
+                    {{-- {{$recipe->links()}} --}}
                 </div>
             </div>
         </div>
