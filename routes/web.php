@@ -17,7 +17,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PublicController::class, 'welcome'])->name('welcome');
 Route::get('categoria/{category}', [PublicController::class, 'categoryShow'])->name('categoryShow');
+Route::get('dettagli/ricetta/{recipe}',[PublicController::class,'detailsRecipe'])->name('detailsRecipe'); 
 
 
 // Recipe
 Route::get('nuova/ricetta',[RecipeController::class, 'createRecipe'])->middleware('auth')->name('createRecipe');
+Route::get('index/ricetta',[RecipeController::class, 'indexRecipe'])->name('indexRecipe'); 

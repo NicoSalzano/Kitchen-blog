@@ -54,11 +54,15 @@ body{
 .title-last-recipe{
     font-weight: 400;
 }
-
+ /* ULTIME RICETTE INSERITE */
 .card-recipe{
     padding: 20px;
     width: 100%;
     cursor: pointer;
+}
+.card-recipe:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 .card-title{

@@ -19,5 +19,11 @@ class PublicController extends Controller
    {
       return view('categoryShow', compact('category'));
    }
+
+   public function detailsRecipe(Recipe $recipe)
+   {
+       return view('detailsRecipe', compact('recipe'));
+   }
+
 }
 

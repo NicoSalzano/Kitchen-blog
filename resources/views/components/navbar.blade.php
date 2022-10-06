@@ -10,6 +10,9 @@
         <li class="nav-item  ">
           <a class="nav-link" aria-current="page" href="/">HOME</a>
         </li>
+        <li class="nav-item  ">
+          <a class="nav-link" aria-current="page" href="{{route('indexRecipe')}}">RICETTE</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="categoriesDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
             CATEGORIE
