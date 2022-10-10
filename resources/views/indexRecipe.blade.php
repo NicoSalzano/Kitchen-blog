@@ -1,4 +1,4 @@
-{{-- PAGINA TUTTI ANNUNCI DA MODIFICARE --}}
+{{-- PAGINA TUTTE RICETTE DA MODIFICARE --}}
 <x-layout>
     <div class="container-fluid">
         <div class="row">
